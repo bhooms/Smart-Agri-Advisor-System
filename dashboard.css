@@ -1,0 +1,168 @@
+.main-content {
+  flex: 1;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  height: 280px;
+  background: url("https://images.unsplash.com/photo-1524594227084-ec5e45f35f27")
+    center / cover no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  padding: 40px;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 36px;
+}
+
+.overlay h1 span {
+  color: #68d391;
+}
+
+.overlay p {
+  margin-top: 15px;
+  max-width: 500px;
+  color: #ddd;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.primary {
+  background: #38a169;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* HOW IT WORKS */
+.how-system {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  width: 100%;
+}
+
+.how-left {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.how-left h2 {
+  margin-bottom: 25px;
+  color: #1f7a4f;
+}
+
+.step {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.step span {
+  background: #e6f4ea;
+  color: #2f855a;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* RIGHT */
+.how-right {
+  background: #f1faf4;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.update {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.green-dot {
+  width: 10px;
+  height: 10px;
+  background: #38a169;
+  border-radius: 50%;
+}
+
+.how-right small {
+  display: block;
+  margin-top: 15px;
+  color: #2f855a;
+  font-size: 13px;
+}
+
+/* RESPONSIVE (IMPORTANT) */
+@media (max-width: 1024px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-system {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
