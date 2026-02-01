@@ -2,13 +2,11 @@
   flex: 1;
   padding: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .top {
   height: 280px;
-  background: url("https://images.unsplash.com/photo-1524594227084-ec5e45f35f27")
-    center / cover no-repeat;
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 40px;

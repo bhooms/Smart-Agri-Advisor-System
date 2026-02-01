@@ -6,9 +6,12 @@
 
   <link rel="stylesheet" href="body.css">
   <link rel="stylesheet" href="sidebar.css">
-  <link rel="stylesheet" href="dashboard.css"
-
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="advisory.css">
+  <link rel="stylesheet" href="history.css">
+  <link rel="stylesheet" href="dataset.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -21,10 +24,10 @@
     </h2>
 
     <nav class="menu">
-      <a class="active">Dashboard</a>
-      <a>AI Advisory</a>
-      <a>Request History</a>
-      <a>Crop Database</a>
+      <a onclick="showPage('dashboard')" class="active">Dashboard</a>
+      <a onclick="showPage('advisory')">AI Advisory</a>
+      <a onclick="showPage('history')">Request History</a>
+      <a onclick="showPage('dataset')">Crop Database</a>
     </nav>
 
     <div class="status">
@@ -39,103 +42,123 @@
   <!-- Main -->
   <main class="main-content">
 
-    <!-- Hero -->
-    <section class="top">
-      <div class="overlay">
-        <h1>Empowering Agriculture with <span>Intelligence</span></h1>
-        <p>
-          Real-time AI agricultural advisory, weather-aware recommendations,
-          and data-driven insights.
-        </p>
+    <!-- DASHBOARD PAGE -->
+    <section id="dashboard" class="page active">
 
-        <div class="buttons">
-          <button class="primary">Get Started →</button>
-          <button class="secondary">Explore Data</button>
+      <!-- Hero -->
+      <section class="top">
+        <div class="overlay">
+          <h1>Empowering Agriculture with <span>Intelligence</span></h1>
+          <p>
+            Real-time AI agricultural advisory, weather-aware recommendations,
+            and data-driven insights.
+          </p>
+
+          <div class="buttons">
+            <button class="primary" onclick="showPage('advisory')">Get Started →</button>
+            <button class="secondary" onclick="showPage('dataset')">Explore Data</button>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features">
+        <div class="card">
+          <h3>AI Analysis</h3>
+          <p>Advanced AI-powered agricultural analysis.</p>
+        </div>
+        <div class="card">
+          <h3>Crop Selection</h3>
+          <p>Choose crops based on soil NPK and pH.</p>
+        </div>
+        <div class="card">
+          <h3>Data Driven</h3>
+          <p>1,200+ verified crop data points.</p>
+        </div>
+        <div class="card">
+          <h3>Sustainable Growth</h3>
+          <p>Optimized fertilization and irrigation.</p>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="how-system">
+        <div class="how-left">
+          <h2>🌱 How It Works</h2>
+
+          <div class="step">
+            <span>1</span>
+            <div>
+              <h4>Data Collection</h4>
+              <p>Input soil NPK, pH, sunlight and moisture levels.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span>2</span>
+            <div>
+              <h4>AI Processing</h4>
+              <p>AI analyzes conditions using agricultural models.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span>3</span>
+            <div>
+              <h4>Recommendations</h4>
+              <p>Crop, irrigation, and fertilizer suggestions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-right">
+          <h4>SYSTEM UPDATES</h4>
+
+          <div class="update">
+            <span>☀️</span>
+            <p>Weather API</p>
+            <span class="green-dot"></span>
+          </div>
+
+          <div class="update">
+            <span>💧</span>
+            <p>Data Engine</p>
+            <span class="green-dot"></span>
+          </div>
+
+          <small>All systems functional. Precision: 98.4%</small>
+        </div>
+      </section>
     </section>
 
-    <!-- Features -->
-    <section class="features">
-      <div class="card">
-        <h3>AI Analysis</h3>
-        <p>Advanced AI-powered agricultural analysis.</p>
-      </div>
-      <div class="card">
-        <h3>Crop Selection</h3>
-        <p>Choose crops based on soil NPK and pH.</p>
-      </div>
-      <div class="card">
-        <h3>Data Driven</h3>
-        <p>1,200+ verified crop data points.</p>
-      </div>
-      <div class="card">
-        <h3>Sustainable Growth</h3>
-        <p>Optimized fertilization and irrigation.</p>
-      </div>
+    <!-- AI ADVISORY PAGE -->
+    <section id="advisory" class="page">
+      <!-- paste advisory.html BODY content here -->
     </section>
 
-    <section class="how-system">
+    <!-- HISTORY PAGE -->
+    <section id="history" class="page">
+      <!-- paste history.html BODY content here -->
+    </section>
 
-    <div class="how-left">
-      <h2>🌱 How It Works</h2>
-
-      <div class="step">
-        <span>1</span>
-      <div>
-      <h4>Data Collection</h4>
-      <p>
-        Input soil NPK, pH, and moisture levels. The system automatically
-        fetches current local weather data.
-        </p>
-      </div>
-    </div>
-
-    <div class="step">
-      <span>2</span>
-      <div>
-        <h4>AI Processing</h4>
-        <p>
-          GPT-4o analyzes environmental conditions against scientific
-          agricultural models.
-        </p>
-      </div>
-    </div>
-
-    <div class="step">
-      <span>3</span>
-      <div>
-        <h4>Tailored Recommendations</h4>
-        <p>
-          Get precise crop suggestions, irrigation schedules, and
-          fertilization strategies.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="how-right">
-    <h4>SYSTEM UPDATES</h4>
-
-    <div class="update">
-      <span>☀️</span>
-      <p>Weather API</p>
-      <span class="green-dot"></span>
-    </div>
-
-    <div class="update">
-      <span>💧</span>
-      <p>Data Engine</p>
-      <span class="green-dot"></span>
-    </div>
-
-    <small>All systems functional. Precision: 98.4%</small>
-  </div>
-
-</section>
+    <!-- DATASET PAGE -->
+    <section id="dataset" class="page">
+      <!-- paste dataset.html BODY content here -->
+    </section>
 
   </main>
 </div>
+
+<!-- JS -->
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.menu a').forEach(a => a.classList.remove('active'));
+
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
 
 </body>
 </html>

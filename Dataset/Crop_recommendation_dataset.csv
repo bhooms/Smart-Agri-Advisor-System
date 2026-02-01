@@ -1,4 +1,4 @@
-temp,humidity,n,p,k,moisture,ph level,sunlight,crop
+Temperature,Humidity,Nitrogen,Phosporous,Potassium,Moisture,PH Level,Sunlight,Crop
 24.4,75.5,47.5,21.3,23.6,44.2,6.35,7.5,Maize
 38.8,31.5,17.9,55.7,17.8,22.8,5.81,10.5,Maize
 33.3,31.3,55.1,24.8,110.0,54.3,6.69,8.1,Maize
