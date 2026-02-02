@@ -1,1 +1,1 @@
-# Smart Agri - Adivisory System
+# Smart Agri - Advisory System
