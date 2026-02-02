@@ -131,23 +131,101 @@
       </section>
     </section>
 
-    <!-- AI ADVISORY PAGE -->
-    <section id="advisory" class="page">
-      <!-- paste advisory.html BODY content here -->
-    </section>
+<section id="advisory" class="page">
+
+  <h1>AI Crop Advisory</h1>
+
+  <div class="advisory-layout">
+
+    <!-- LEFT: INPUTS -->
+    <div class="advisory-form">
+      <form>
+        <label>Temperature</label>
+        <input type="number" id="Temperature">
+
+        <label>Humidity</label>
+        <input type="number" id="Humidity">
+
+        <label>Nitrogen</label>
+        <input type="number" id="Nitrogen">
+
+        <label>Phosphorous</label>
+        <input type="number" id="Phosporous">
+
+        <label>Potassium</label>
+        <input type="number" id="Potassium">
+
+        <label>pH Level</label>
+        <input type="number" id="pH Level">
+
+        <label>Sunlight</label>
+        <input type="number" id="Sunlight">
+      </form>
+
+      <button id="predictBtn" type="button">Predict Crop</button>
+    </div>
+
+    <!-- RIGHT: RESULT -->
+    <div id="resultBox" style="display:none;">
+    <h3>Prediction Result</h3>
+    <p>Recommended Crop: <b id="cropResult"></b></p>
+
+  </div>
+
+</section>
+
+
 
     <!-- HISTORY PAGE -->
-    <section id="history" class="page">
-      <!-- paste history.html BODY content here -->
-    </section>
+<section id="history" class="page">
+
+  <h1>Prediction History</h1>
+
+  <div class="dataset-page">
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Temperature</th>
+            <th>Huidity</th>
+            <th>Nitrogen</th>
+            <th>Phosphorous</th>
+            <th>Potassium</th>
+            <th>pH Level</th>
+            <th>Sunlight</th>
+            <th>Prediction</th>
+          </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+
 
     <!-- DATASET PAGE -->
-    <section id="dataset" class="page">
-      <!-- paste dataset.html BODY content here -->
-    </section>
+<section id="dataset" class="page">
+
+  <div class="dataset-page">
+    <h1>Crop Recommendation Dataset</h1>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr id="tableHead"></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+
 
   </main>
-</div>
+
 
 <!-- JS -->
 <script>
@@ -160,5 +238,14 @@ function showPage(id) {
 }
 </script>
 
+<script>
+  document.getElementById("predictBtn").addEventListener("click", function () {
+    document.getElementById("resultBox").style.display = "block";
+  });
+</script>
+
+<script src="predict.js"></script>
+<script src="dataset.js"></script>
+<script src="history.js"></script>
 </body>
 </html>
