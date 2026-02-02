@@ -87,3 +87,4 @@ document.getElementById("predictBtn").addEventListener("click", () => {
     time: new Date().toLocaleString()
   });
 });
+

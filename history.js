@@ -26,3 +26,4 @@ function loadHistory() {
     historyBody.appendChild(tr);
   });
 }
+

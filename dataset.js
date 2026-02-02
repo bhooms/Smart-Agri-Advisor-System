@@ -37,3 +37,5 @@ fetch("Dataset/Crop_recommendation_dataset.csv")
     console.log("Dataset loaded:", window.cropData.length);
   })
   .catch(err => console.error("Dataset error:", err));
+
+  
