@@ -43,12 +43,16 @@ Smart-Agri-Advisor-System/
 ├── history.js
 ├── predict.js
 
+---
+
 📊 Dataset
 
 The project uses a CSV dataset:
 Dataset/Crop_recommendation_dataset.csv
 
 This dataset is used to analyze parameters and provide crop recommendations.
+
+---
 
 🎯 Future Enhancements
 
@@ -58,12 +62,18 @@ This dataset is used to analyze parameters and provide crop recommendations.
 📈 Advanced analytics and visualization
 🤝 Contributing
 
+---
+
 👩‍💻 Author
 Bhoomi Patil
 GitHub: @bhooms
 
+---
+
 Access Smart Agri Advisor Here:
 https://bhooms.github.io/Smart-Agri-Advisor-System/main.html
+
+---
 
 📜 License
 This project is developed for educational and academic purposes.
