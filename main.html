@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>AgriSmart Dashboard</title>
@@ -14,238 +15,287 @@
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <h2 class="logo">
-      <img class="logo-img" src="images/leaf logo.webp">
-      AgriSmart
-    </h2>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">
+        <img class="logo-img" src="images/leaf logo.webp">
+        AgriSmart
+      </h2>
 
-    <nav class="menu">
-      <a onclick="showPage('dashboard')" class="active">Dashboard</a>
-      <a onclick="showPage('advisory')">AI Advisory</a>
-      <a onclick="showPage('history')">Request History</a>
-      <a onclick="showPage('dataset')">Crop Database</a>
-    </nav>
+      <nav class="menu">
+        <a onclick="showPage('dashboard')" class="active">Dashboard</a>
+        <a onclick="showPage('advisory')">AI Advisory</a>
+        <a onclick="showPage('history')">Request History</a>
+        <a onclick="showPage('dataset')">Crop Database</a>
+      </nav>
 
-    <div class="status">
-      <span class="dot"></span>
-      <div>
-        <strong>System Online</strong>
-        <p>Ready to process soil data.</p>
+      <div class="status">
+        <span class="dot"></span>
+        <div>
+          <strong>System Online</strong>
+          <p>Ready to process soil data.</p>
+        </div>
       </div>
-    </div>
-  </aside>
+    </aside>
 
-  <!-- Main -->
-  <main class="main-content">
+    <!-- Main -->
+    <main class="main-content">
 
-    <!-- DASHBOARD PAGE -->
-    <section id="dashboard" class="page active">
+      <!-- DASHBOARD PAGE -->
+      <section id="dashboard" class="page active">
 
-      <!-- Hero -->
-      <section class="top">
-        <div class="overlay">
-          <h1>Empowering Agriculture with <span>Intelligence</span></h1>
-          <p>
-            Real-time AI agricultural advisory, weather-aware recommendations,
-            and data-driven insights.
-          </p>
+        <!-- Hero -->
+        <section class="top">
+          <div class="overlay">
+            <h1>Empowering Agriculture with <span>Intelligence</span></h1>
+            <p>
+              Real-time AI agricultural advisory, weather-aware recommendations,
+              and data-driven insights.
+            </p>
 
-          <div class="buttons">
-            <button class="primary" onclick="showPage('advisory')">Get Started →</button>
-            <button class="secondary" onclick="showPage('dataset')">Explore Data</button>
+            <div class="buttons">
+              <button class="primary" onclick="showPage('advisory')">Get Started →</button>
+              <button class="secondary" onclick="showPage('dataset')">Explore Data</button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Features -->
-      <section class="features">
-        <div class="card">
-          <h3>AI Analysis</h3>
-          <p>Advanced AI-powered agricultural analysis.</p>
-        </div>
-        <div class="card">
-          <h3>Crop Selection</h3>
-          <p>Choose crops based on soil NPK and pH.</p>
-        </div>
-        <div class="card">
-          <h3>Data Driven</h3>
-          <p>1,200+ verified crop data points.</p>
-        </div>
-        <div class="card">
-          <h3>Sustainable Growth</h3>
-          <p>Optimized fertilization and irrigation.</p>
-        </div>
-      </section>
+        <!-- Features -->
+        <section class="features">
+          <div class="card">
+            <h3>AI Analysis</h3>
+            <p>Advanced AI-powered agricultural analysis.</p>
+          </div>
+          <div class="card">
+            <h3>Crop Selection</h3>
+            <p>Choose crops based on soil NPK and pH.</p>
+          </div>
+          <div class="card">
+            <h3>Data Driven</h3>
+            <p>1,200+ verified crop data points.</p>
+          </div>
+          <div class="card">
+            <h3>Sustainable Growth</h3>
+            <p>Optimized fertilization and irrigation.</p>
+          </div>
+        </section>
 
-      <!-- HOW IT WORKS -->
-      <section class="how-system">
-        <div class="how-left">
-          <h2>🌱 How It Works</h2>
+        <!-- HOW IT WORKS -->
+        <section class="how-system">
+          <div class="how-left">
+            <h2>🌱 How It Works</h2>
 
-          <div class="step">
-            <span>1</span>
-            <div>
-              <h4>Data Collection</h4>
-              <p>Input soil NPK, pH, sunlight and moisture levels.</p>
+            <div class="step">
+              <span>1</span>
+              <div>
+                <h4>Data Collection</h4>
+                <p>Input soil NPK, pH, sunlight and moisture levels.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <span>2</span>
+              <div>
+                <h4>AI Processing</h4>
+                <p>AI analyzes conditions using agricultural models.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <span>3</span>
+              <div>
+                <h4>Recommendations</h4>
+                <p>Crop, irrigation, and fertilizer suggestions.</p>
+              </div>
             </div>
           </div>
 
-          <div class="step">
-            <span>2</span>
-            <div>
-              <h4>AI Processing</h4>
-              <p>AI analyzes conditions using agricultural models.</p>
+          <div class="how-right">
+            <h4>SYSTEM UPDATES</h4>
+
+            <div class="update">
+              <span>☀️</span>
+              <p>Weather API</p>
+              <span class="green-dot"></span>
             </div>
-          </div>
 
-          <div class="step">
-            <span>3</span>
-            <div>
-              <h4>Recommendations</h4>
-              <p>Crop, irrigation, and fertilizer suggestions.</p>
+            <div class="update">
+              <span>💧</span>
+              <p>Data Engine</p>
+              <span class="green-dot"></span>
             </div>
+
+            <small>All systems functional. Precision: 98.4%</small>
           </div>
-        </div>
-
-        <div class="how-right">
-          <h4>SYSTEM UPDATES</h4>
-
-          <div class="update">
-            <span>☀️</span>
-            <p>Weather API</p>
-            <span class="green-dot"></span>
-          </div>
-
-          <div class="update">
-            <span>💧</span>
-            <p>Data Engine</p>
-            <span class="green-dot"></span>
-          </div>
-
-          <small>All systems functional. Precision: 98.4%</small>
-        </div>
+        </section>
       </section>
-    </section>
 
-<section id="advisory" class="page">
+      <section id="advisory" class="page">
 
-  <h1>AI Crop Advisory</h1>
+        <h1>AI Crop Advisory</h1>
 
-  <div class="advisory-layout">
+        <div class="advisory-layout">
 
-    <!-- LEFT: INPUTS -->
-    <div class="advisory-form">
-      <form>
-        <label>Temperature</label>
-        <input type="number" id="Temperature">
+          <!-- LEFT: INPUTS -->
+          <div class="advisory-form">
+            <form>
+              <label>Temperature</label>
+              <input type="number" id="Temperature" readonly>
 
-        <label>Humidity</label>
-        <input type="number" id="Humidity">
+              <label>Humidity</label>
+              <input type="number" id="Humidity" readonly>
 
-        <label>Nitrogen</label>
-        <input type="number" id="Nitrogen">
+              <label>Nitrogen</label>
+              <input type="number" id="Nitrogen">
 
-        <label>Phosphorous</label>
-        <input type="number" id="Phosporous">
+              <label>Phosphorous</label>
+              <input type="number" id="Phosphorous">
 
-        <label>Potassium</label>
-        <input type="number" id="Potassium">
+              <label>Potassium</label>
+              <input type="number" id="Potassium">
 
-        <label>pH Level</label>
-        <input type="number" id="pH Level">
+              <label>pH Level</label>
+              <input type="number" id="pH">
 
-        <label>Sunlight</label>
-        <input type="number" id="Sunlight">
-      </form>
+              <label>Sunlight</label>
+              <input type="number" id="Sunlight">
 
-      <button id="predictBtn" type="button">Predict Crop</button>
-    </div>
+              <label>Soil Moisture</label>
+              <input type="number" id="Moisture">
+            </form>
 
-    <!-- RIGHT: RESULT -->
-    <div id="resultBox" style="display:none;">
-    <h3>Prediction Result</h3>
-    <p>Recommended Crop: <b id="cropResult"></b></p>
+            <button id="predictBtn" type="button">Get Advice</button>
+          </div>
 
-  </div>
+          <!-- RIGHT: RESULT -->
+          <div id="resultBox" class="result-box" style="display:none;">
+            <h3>AI Advisory Result</h3>
+            <p id="cropResult"></p>
+          </div>
 
-</section>
+        </div>
 
-
-
-    <!-- HISTORY PAGE -->
-<section id="history" class="page">
-
-  <h1>Prediction History</h1>
-
-  <div class="dataset-page">
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Temperature</th>
-            <th>Huidity</th>
-            <th>Nitrogen</th>
-            <th>Phosphorous</th>
-            <th>Potassium</th>
-            <th>pH Level</th>
-            <th>Sunlight</th>
-            <th>Prediction</th>
-          </tr>
-        </thead>
-        <tbody id="historyBody"></tbody>
-      </table>
-    </div>
-  </div>
-
-</section>
+      </section>
 
 
-    <!-- DATASET PAGE -->
-<section id="dataset" class="page">
 
-  <div class="dataset-page">
-    <h1>Crop Recommendation Dataset</h1>
+      <!-- HISTORY PAGE -->
+      <section id="history" class="page">
 
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr id="tableHead"></tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
-    </div>
-  </div>
+        <div class="history-header">
+          <h1>Prediction History</h1>
+          <div class="history-actions">
+            <button id="toggleDeleteModeBtn" class="clear-btn secondary-btn" onclick="toggleDeleteMode()">Select to
+              Delete</button>
+            <button id="deleteSelectedBtn" class="clear-btn secondary-btn" onclick="deleteSelectedHistory()"
+              style="display:none;">Delete Selected</button>
+            <button id="clearHistoryBtn" class="clear-btn" onclick="clearHistory()">Clear All History</button>
+          </div>
+        </div>
 
-</section>
+        <div class="dataset-page">
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th class="delete-col" style="display:none;"><input type="checkbox" id="selectAllHistory"
+                      onclick="toggleAllHistory()"></th>
+                  <th>#</th>
+                  <th>Temperature</th>
+                  <th>Humidity</th>
+                  <th>Nitrogen</th>
+                  <th>Phosphorous</th>
+                  <th>Potassium</th>
+                  <th>pH Level</th>
+                  <th>Sunlight</th>
+                  <th>Moisture</th>
+                  <th>Time</th>
+                  <th>Prediction</th>
+                </tr>
+              </thead>
+              <tbody id="historyBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
 
 
-  </main>
+      <!-- DATASET PAGE -->
+      <section id="dataset" class="page">
+
+        <div class="dataset-page">
+          <h1>Crop Recommendation Dataset</h1>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr id="tableHead"></tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
 
 
-<!-- JS -->
-<script>
-function showPage(id) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.menu a').forEach(a => a.classList.remove('active'));
+    </main>
 
-  document.getElementById(id).classList.add('active');
-  event.target.classList.add('active');
-}
-</script>
 
-<script>
-  document.getElementById("predictBtn").addEventListener("click", function () {
-    document.getElementById("resultBox").style.display = "block";
-  });
-</script>
+    <!-- JS -->
+    <script>
+      function showPage(id) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.menu a').forEach(a => a.classList.remove('active'));
 
-<script src="predict.js"></script>
-<script src="dataset.js"></script>
-<script src="history.js"></script>
+        document.getElementById(id).classList.add('active');
+        event.target.classList.add('active');
+
+        if (id === 'history' && typeof loadHistory === 'function') {
+          loadHistory();
+        }
+      }
+    </script>
+    <script src="dataset.js"></script>
+    <script src="history.js"></script>
+
+    <!-- Firebase Script -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+      import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
+
+      // Your Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBlA5rVbxbe9BYUnuwyG7fA9f_ThathRx8",
+        authDomain: "smart-agri-advisor-786e3.firebaseapp.com",
+        databaseURL: "https://smart-agri-advisor-786e3-default-rtdb.firebaseio.com",
+        projectId: "smart-agri-advisor-786e3",
+        storageBucket: "smart-agri-advisor-786e3.firebasestorage.app",
+        messagingSenderId: "310242679357",
+        appId: "1:310242679357:web:6b2e0aa514c3a93b1a6854"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+
+      // Reference to sensor data
+      const sensorRef = ref(db, "sensor");
+
+      // Listen for changes in sensor data
+      onValue(sensorRef, (snapshot) => {
+        const data = snapshot.val();
+
+        if (data) {
+          document.getElementById("Temperature").value = data.temperature || 0;
+          document.getElementById("Humidity").value = data.humidity || 0;
+        }
+      });
+    </script>
+    <script src="predict.js"></script>
 </body>
+
 </html>
